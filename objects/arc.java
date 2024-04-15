@@ -23,4 +23,22 @@ public class arc {
         }
     }
 
+    // rotates all the vertices about the origin
+    public void rotateAllX(float theta) {
+        for (int i = 0; i < points.length; i++) {
+            points[i].rotateX(theta);
+        }
+    }
+
+    public void rotateAllY(float theta) {
+        for (int i = 0; i < points.length; i++) {
+            points[i].rotateY(theta);
+        }
+    }
+
+    public void rotateAllZ(float theta) {
+        for (int i = 0; i < points.length; i++) {
+            points[i].rotateZ(theta);
+        }
+    }
 }

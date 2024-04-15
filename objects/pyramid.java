@@ -29,4 +29,22 @@ public class pyramid {
         //3rd point to the 4th point
         applet.line(twoDpoints[2][0], twoDpoints[2][1], twoDpoints[3][0], twoDpoints[3][1]);
     }
+    // rotates all the vertices about the origin
+    public void rotateAllX(float theta) {
+        for (int i = 0; i < points.length; i++) {
+            points[i].rotateX(theta);
+        }
+    }
+
+    public void rotateAllY(float theta) {
+        for (int i = 0; i < points.length; i++) {
+            points[i].rotateY(theta);
+        }
+    }
+
+    public void rotateAllZ(float theta) {
+        for (int i = 0; i < points.length; i++) {
+            points[i].rotateZ(theta);
+        }
+    }
 }

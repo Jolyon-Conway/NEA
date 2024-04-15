@@ -35,4 +35,23 @@ public class cuboid {
         applet.line(twoDpoints[7][0], twoDpoints[7][1], twoDpoints[4][0], twoDpoints[4][1]);
         applet.line(twoDpoints[7][0], twoDpoints[7][1], twoDpoints[6][0], twoDpoints[6][1]);
     }
+
+    // rotates all the vertices about the origin
+    public void rotateAllX(float theta) {
+        for (int i = 0; i < points.length; i++) {
+            points[i].rotateX(theta);
+        }
+    }
+
+    public void rotateAllY(float theta) {
+        for (int i = 0; i < points.length; i++) {
+            points[i].rotateY(theta);
+        }
+    }
+
+    public void rotateAllZ(float theta) {
+        for (int i = 0; i < points.length; i++) {
+            points[i].rotateZ(theta);
+        }
+    }
 }

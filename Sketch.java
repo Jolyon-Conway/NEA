@@ -14,14 +14,14 @@ public class Sketch extends PApplet {
 
     public void setup() {
         points = new point[8];
-        points[0] = new point(-104.90f, -18.40f, 136.60f);
-        points[1] = new point(68.30f, 81.70f, 136.60f);
-        points[2] = new point(18.30f, 168.30f, -36.60f);
-        points[3] = new point(-154.90f, 68.30f, -36.60f);
-        points[4] = new point(-18.30f, -168.30f, 36.60f);
-        points[5] = new point(154.90f, -68.30f, 36.60f);
-        points[6] = new point(104.90f, 18.40f, -136.60f);
-        points[7] = new point(-68.30f, -81.70f, -136.60f);
+        points[0] = new point(100f, 100f, 100f);
+        points[1] = new point(-100f, 100f, 100f);
+        points[2] = new point(-100f, -100f, 100f);
+        points[3] = new point(100f, -100f, 100f);
+        points[4] = new point(100f, 100f, -100f);
+        points[5] = new point(-100f, 100f, -100f);
+        points[6] = new point(-100f, -100f, -100f);
+        points[7] = new point(100f, -100f, -100f);
     }
 
     public void draw() {
@@ -30,6 +30,9 @@ public class Sketch extends PApplet {
         cuboid cuboid = new cuboid(points);
         float[][] twoDpoints = cuboid.vectoriseAll(points);
         cuboid.pointToPoint(twoDpoints, this);
+        cuboid.rotateAllX(1f);
+        cuboid.rotateAllY(1f);
+        cuboid.rotateAllZ(1f);
     }
 
     public static void main(String[] args) {

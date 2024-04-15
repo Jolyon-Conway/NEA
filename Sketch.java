@@ -23,10 +23,10 @@ public class Sketch extends PApplet {
         points[7] = new point(100f, -100f, -100f);
         cuboid = new cuboid(points);
         points2 = new point[4];
-        points2[0] = new point(0f,0,0);
-        points2[1] = new point(-0, 0, 100f);
+        points2[0] = new point(0f,200f,0);
+        points2[1] = new point(-100f, 120f, 100f);
         points2[2] = new point(100f, 120f, 100f);
-        points2[3] = new point(0f, 0, -100f);
+        points2[3] = new point(0f, 120f, -100f);
         pyramid = new pyramid(points2);
     }
 
